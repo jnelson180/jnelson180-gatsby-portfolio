@@ -2,8 +2,8 @@
 
 module.exports = {
   url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Jake Nelson - Software Engineer',
+  subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -18,21 +18,22 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: "Resume",
+      path: 'https://www.visualcv.com/jnelson180/'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Jake Nelson',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: `
+      Javascript developer. React fan. FreeCodeCamp alumni.
+      Music lover. Lifelong learner and seeker of knowledge.
+    `,
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'jnelson180@gmail.com',
+      twitter: 'jnelson180',
+      github: 'jnelson180',
+      linkedin: 'jnelson180',
     }
   }
 };

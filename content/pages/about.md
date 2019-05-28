@@ -3,10 +3,15 @@ title: "About me"
 template: "page"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I am a software engineer that currently specializes in all things Javascript related: React, Gatsby, Node, Typescript, ES6, Redux, RxJs, Intern, Jest, npm, Enzyme, Sinon, Webpack, and more.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+To me, the heart and soul of programming is in how well you can solve problems using the tools that you have at your disposal. The ability to quickly pick up a new tool or framework is extremely important in the rapidly changing ecosystem of modern Javascript development.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Feel free to have a look through my projects and repositories listed here.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+I am also a lover of all types of music, a guitar player, an avid gamer, an above-average bowler, and an amateur (but passionate) snowboarder.
+
+I love to make healthy, home-made meals, go jogging, and last but not least, tinker with anything that is broken to try and figure out how it works and fix it.
+
+If you have any questions or comments, feel free to contact me via email or social media, as listed to the left.
+

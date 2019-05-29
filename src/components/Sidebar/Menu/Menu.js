@@ -32,9 +32,6 @@ const Menu = ({ menu }) => {
       <a
         className={ className }
         activeClassName={ activeClassName }
-        style={{
-          textDecoration: "none"
-        }}
         href={ path }
         target="_blank"
       >

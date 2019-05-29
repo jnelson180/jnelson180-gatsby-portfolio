@@ -36,6 +36,15 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        baseUrl: 'jakenelsondev.000webhostapp.com',
+        protocol: 'https',
+        hostingWPCOM: false,
+        useACF: false
+      }
+    },
+    {
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `
@@ -69,9 +78,6 @@ module.exports = {
                   edges {
                     node {
                       html
-                      fields {
-                        slug
-                      }
                       frontmatter {
                         title
                         date

@@ -51,3 +51,11 @@ export type AllMarkdownRemark = {
 };
 
 export type MarkdownRemark = Node;
+
+export type WordpressPost = {
+  id
+  slug
+  status
+  template
+  format
+}

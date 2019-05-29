@@ -3,38 +3,36 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
 
-type Props = {
-  data: MarkdownRemark
-};
-
-const PostTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { title: postTitle, description: postDescription } = data.markdownRemark.frontmatter;
-  const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
+const PostTemplate = ({ data }) => {
+  console.log(data)
+  const post = data.wordpressPost;
+  const slug = data.wordpressPost.slug;
+  const { title, metaDescription } = data.site.siteMetadata;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
-      <Post post={data.markdownRemark} />
+    <Layout title={`${post.title} - ${ title }`} description={ metaDescription}>
+      {/* <Post post={data.markdownRemark} /> */}
+      <h1>{ post.title }</h1>
+      <div dangerouslySetInnerHTML={{  __html: post.content }} />
     </Layout>
   );
 };
 
 
 export const query = graphql`
-  query PostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query PostBySlug($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       id
       html
-      fields {
-        slug
-        tagSlugs
-      }
-      frontmatter {
-        date
-        description
-        tags
+    }
+    wordpressPost(id: { eq: $id }) {
+      title
+      content
+      slug
+    }
+    site {
+      siteMetadata {
         title
       }
     }

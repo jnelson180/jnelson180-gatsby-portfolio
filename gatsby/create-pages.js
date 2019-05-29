@@ -27,41 +27,42 @@ const createPages = async ({ graphql, actions }) => {
 
   // Posts and pages from markdown
   const result = await graphql(`
-    {
-      allMarkdownRemark(
-        filter: { frontmatter: { draft: { ne: true } } }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              template
-            }
+  {
+    allMarkdownRemark(filter: {frontmatter: {draft: {ne: true}}, fields: {slug: {}}}) {
+      edges {
+        node {
+          frontmatter {
+            template
           }
-        }
-      }
-      allWordpressPost {
-        edges {
-          node {
-            id
+          fields {
             slug
-            status
-            template
-            format
-          }
-        }
-      }
-      allWordpressPage {
-        edges {
-          node {
-            id
-            status
-            template
-            title
           }
         }
       }
     }
-  `);
+    allWordpressPost {
+      edges {
+        node {
+          id
+          slug
+          status
+          template
+          format
+        }
+      }
+    }
+    allWordpressPage {
+      edges {
+        node {
+          id
+          status
+          template
+          title
+        }
+      }
+    }
+  }
+`);
 
   const { edges } = result.data.allMarkdownRemark;
 
